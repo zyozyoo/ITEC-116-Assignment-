@@ -8,7 +8,7 @@ export class PrimeNumberCheckerController {
             return 'The number input must be positive!'
         }
 
-        function isPrimeNum(num: number): boolean {
+        function isPrime(num: number): boolean {
             for (let i = 2; i < num; i++ ) {
                 if (num % i == 0) {
                     return false;
@@ -18,7 +18,7 @@ export class PrimeNumberCheckerController {
         }
         
         return JSON.stringify({
-            isPrimeNum: isPrimeNum(n),
+            isPrime: isPrime(n),
         });
     }
 }
